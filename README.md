@@ -1,4 +1,5 @@
 # Vue Simple Photoswipe
+
 Photoswipe plugin for Vue, based on [https://github.com/ymyang/vue-photoswipe](https://github.com/ymyang/vue-photoswipe).
 
 [Check out the demo](https://sabatinomasala.github.io/vue-simple-photoswipe/)
@@ -18,6 +19,7 @@ Vue.use(PhotoSwipe)
 ```
 
 ## Usage with Nuxt
+
 It's important that ssr is set to `false`, since the plugin needs the `document` to be available. In `nuxt.config.js` add the following plugin:
 
 ```
@@ -26,5 +28,18 @@ plugins: [
 ]
 ```
 
+## Basis usage
+
+```
+this.$photoswipe.open(0, [
+    {
+        src: '',
+        w: 1920,
+        h: 1080
+    }
+], {});
+```
+
 ## Credit
-* Photoswipe Vue component: [https://github.com/ymyang/vue-photoswipe](https://github.com/ymyang/vue-photoswipe)
+
+- Photoswipe Vue component: [https://github.com/ymyang/vue-photoswipe](https://github.com/ymyang/vue-photoswipe)
